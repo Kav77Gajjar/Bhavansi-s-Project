@@ -71,7 +71,7 @@ def mail(request):
             return email
 
         msg = "Hello you've got an mail"
-        admin = "admin email address enter here"
+        admin = "mkav8888@gmail.com"
         user = email
         # mail will be sent to admin
         subject = f"Hello {admin} you have a new message from {name} via your website"
