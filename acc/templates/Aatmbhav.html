@@ -6,7 +6,7 @@
     <title>Aatmbhava</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="https://res.cloudinary.com/dxtx1kkwy/image/upload/v1755201763/WhatsApp_Image_2025-08-14_at_11.25.56_afb55362_go4agk.jpg" type="image/x-icon">
     <meta name="title" content="Dr.Jayti | Ayurvedic Doctor | Yoga, Diet & Consultation" />
     <meta name="description" content="🌿 Holistic healing with Dr.Jayti – Ayurvedic doctor offering personalized yoga sessions, natural diet plans, and wellness consultations for a healthier you." />
     <meta name="keywords" content="Ayurvedic Doctor, Yoga Sessions, Diet Plans, Wellness Consultation, Holistic Healing, Natural Remedies, Ayurvedic Medicine, Yoga Therapy, Nutritionist, Weight Management, Stress Relief, Mindfulness, Meditation, Herbal Treatment, Lifestyle Coaching, Healthy Living, Traditional Medicine, Wellness Expert, Yoga Teacher, Diet Consultant, Jethva Bhavansi, Natural Health" />
@@ -73,7 +73,7 @@
                 <div class="flex items-center space-x-3">
 <!--                    <div class="w-10 h-10 rounded-full bg-[#113F67] flex items-center justify-center">-->
 <!--                        <i class="fas fa-rocket text-[#F3F9FB] text-xl"></i>-->
-                            <img src="{{ hero.brand_logo }}" alt="Logo" class="w-8 h-8">
+                            <img src="{{ hero.brand_logo | default:"https://res.cloudinary.com/dxtx1kkwy/image/upload/v1755201763/WhatsApp_Image_2025-08-14_at_11.25.56_afb55362_go4agk.jpg" }}" alt="Logo" class="w-8 h-8">
 <!--                    </div>-->
                     <a href="{{ hero.website }}" class="text-2xl font-bold text-[#F3F9FB] hover:text-[#87C0CD] transition-colors">
                         {{ hero.brand_name|default:"Aatmbhav" }}
