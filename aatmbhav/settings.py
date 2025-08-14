@@ -12,9 +12,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = os.getenv('DEBUG')
+DEBUG = True
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
-ALLOWED_HOSTS = ['https://aatmabhava.onrender.com']
+ALLOWED_HOSTS = ['https://aatmabhava.onrender.com', 'https://aatmabhava.onrender.com/']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
