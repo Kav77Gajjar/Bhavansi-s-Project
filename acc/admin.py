@@ -14,6 +14,8 @@ admin.site.register(SocialLinks)
 admin.site.register(ContactInfo)
 admin.site.register(ServiceFeature)
 
+
+
 class ServiceFeatureInline(admin.TabularInline):
     model = ServiceFeature
     extra = 1
@@ -56,6 +58,9 @@ LOCKED_SUPERUSER = ["gajjarkav@gmail.com", "bhavansijethva@gmail.com"]
 class CustomUserAdmin(admin.ModelAdmin):
     list_display = ("username", "email", "is_superuser", "is_staff")
 
+    class Meta:
+        verbose_name = "Admins"
+        verbose_name_plural = "Admins"
 
     def get_readonly_fields(self, request, obj=None):
         if obj and obj.email in LOCKED_SUPERUSER:
